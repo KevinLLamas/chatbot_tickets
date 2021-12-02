@@ -29,11 +29,16 @@
   "homepage": "https://wwebjs.dev/",
   "dependencies": {
     "@pedroslopez/moduleraid": "^5.0.2",
+    "chalk": "^4.1.2",
     "fluent-ffmpeg": "^2.1.2",
     "jsqr": "^1.3.1",
     "mime": "^2.4.5",
+    "mysql2": "^2.3.3",
     "node-webpmux": "^3.1.0",
+    "ora": "^6.0.1",
     "puppeteer": "^10.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "sequelize": "^6.12.0-alpha.1",
     "sharp": "^0.28.3"
   },
   "devDependencies": {
