@@ -4,28 +4,28 @@ const Connection =  require('../config/db');
 const connect = new Connection();
 const sequelize = connect.getConnectSequelize;
 
-class Participacion extends Model{}
+class Subcategorias extends Model{}
 
-Participacion.init({
-    id_chat:{
-        type: Sequelize.INTEGER(),
-        
+Subcategorias.init({
+    id:{
+        type:Sequelize.STRING,
+        primaryKey: true,
     },
-    tipo:{
+    id_categoria:{
         type:Sequelize.STRING
     },
-    img:{
+    nombre:{
         type:Sequelize.STRING
     },
-    numero:{
+    clave:{
         type:Sequelize.STRING
     },
 },
 {
     sequelize,
-    modelName:'participaciones',
+    modelName:'subcategoria',
     freezeTableName:true,
     timestamps:false
 
 });
-module.exports = Participacion;
+module.exports = Subcategorias;
